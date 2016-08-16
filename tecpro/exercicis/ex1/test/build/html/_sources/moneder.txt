@@ -1,6 +1,0 @@
-=======
-Moneder
-=======
-
-.. automodule:: moneder
-   :members:

@@ -1,6 +1,0 @@
-=========
-Component
-=========
-
-.. automodule:: component
-   :members:

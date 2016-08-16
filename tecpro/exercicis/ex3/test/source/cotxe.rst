@@ -1,6 +1,0 @@
-=====
-Cotxe
-=====
-
-.. automodule:: cotxe
-   :members:

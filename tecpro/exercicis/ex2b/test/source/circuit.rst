@@ -1,6 +1,0 @@
-=======
-Circuit
-=======
-
-.. automodule:: circuit
-   :members:
