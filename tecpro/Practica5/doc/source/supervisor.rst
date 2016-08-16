@@ -1,6 +1,0 @@
-==========
-Supervisor
-==========
-
-.. automodule:: supervisor
-   :members:

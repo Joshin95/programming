@@ -1,6 +1,0 @@
-====
-Node
-====
-
-.. automodule:: node
-   :members:

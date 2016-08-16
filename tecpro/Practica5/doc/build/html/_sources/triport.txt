@@ -1,6 +1,0 @@
-=======
-Triport
-=======
-
-.. automodule:: triport
-   :members:		

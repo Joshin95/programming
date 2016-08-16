@@ -1,6 +1,0 @@
-=====
-Estat
-=====
-
-.. automodule:: estat
-   :members:
