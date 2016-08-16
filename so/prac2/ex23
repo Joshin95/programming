@@ -1,0 +1,6 @@
+#!/bin/bash
+clear
+for element in $(find -name '*.py')
+do
+awk '/class/{ print $2}' $element | awk -vORS= '{ (gsub(/\(.*\):/, "")); print ; print " "; print "'$element'"; print "\n" }'
+done

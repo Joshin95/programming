@@ -1,0 +1,157 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Receptari &mdash; Gestor de receptes de cuina a documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     'a',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Gestor de receptes de cuina a documentation" href="index.html" />
+    <link rel="prev" title="Recepta" href="recepta.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="recepta.html" title="Recepta"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Gestor de receptes de cuina a documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-receptari">
+<span id="receptari"></span><h1>Receptari<a class="headerlink" href="#module-receptari" title="Permalink to this headline">¶</a></h1>
+<p>Aquest modul s&#8217;ocupa de la gestio de les receptes i productes i de guardar tot el contingut en diferents diccionaris</p>
+<dl class="class">
+<dt id="receptari.Receptari">
+<em class="property">class </em><tt class="descclassname">receptari.</tt><tt class="descname">Receptari</tt><a class="reference internal" href="_modules/receptari.html#Receptari"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#receptari.Receptari" title="Permalink to this definition">¶</a></dt>
+<dd><p>Aquesta classe gestiona els diccionaris on es guarden els productes i les receptes</p>
+<dl class="method">
+<dt id="receptari.Receptari.afegeix_ingredient_recepta">
+<tt class="descname">afegeix_ingredient_recepta</tt><big>(</big><em>nomp</em>, <em>nomr</em>, <em>q</em><big>)</big><a class="reference internal" href="_modules/receptari.html#Receptari.afegeix_ingredient_recepta"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#receptari.Receptari.afegeix_ingredient_recepta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Aquest metode Afegeix q grams del ingredient nomp a la recepta nomr</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="receptari.Receptari.afegeix_producte">
+<tt class="descname">afegeix_producte</tt><big>(</big><em>nomp</em><big>)</big><a class="reference internal" href="_modules/receptari.html#Receptari.afegeix_producte"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#receptari.Receptari.afegeix_producte" title="Permalink to this definition">¶</a></dt>
+<dd><p>Metode modificador que afegeix l&#8217;objecte producte de nom p al diccionari</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="receptari.Receptari.afegeix_recepta">
+<tt class="descname">afegeix_recepta</tt><big>(</big><em>n</em><big>)</big><a class="reference internal" href="_modules/receptari.html#Receptari.afegeix_recepta"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#receptari.Receptari.afegeix_recepta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Metode modificador que afegeix l&#8217;objecte recepta de nom n al diccionari</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="receptari.Receptari.ingredients">
+<tt class="descname">ingredients</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/receptari.html#Receptari.ingredients"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#receptari.Receptari.ingredients" title="Permalink to this definition">¶</a></dt>
+<dd><p>Aquest metode retorna la llista de tots els ingredients del receptari</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="receptari.Receptari.recepta">
+<tt class="descname">recepta</tt><big>(</big><em>nomr</em><big>)</big><a class="reference internal" href="_modules/receptari.html#Receptari.recepta"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#receptari.Receptari.recepta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Aquest metode retorna una llista de tuples on cada d&#8217;elles conte un ingredient i la seva quantitat de la recepta nomr</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="receptari.Receptari.receptes">
+<tt class="descname">receptes</tt><big>(</big><big>)</big><a class="reference internal" href="_modules/receptari.html#Receptari.receptes"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#receptari.Receptari.receptes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Aquest metode retorna la llista de totes les receptes del receptari</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="receptari.Receptari.receptes_ingredients">
+<tt class="descname">receptes_ingredients</tt><big>(</big><em>nomp</em><big>)</big><a class="reference internal" href="_modules/receptari.html#Receptari.receptes_ingredients"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#receptari.Receptari.receptes_ingredients" title="Permalink to this definition">¶</a></dt>
+<dd><p>Aquest metode retorna la llista de receptos on s&#8217;hi troba el producte nomp</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="recepta.html"
+                        title="previous chapter">Recepta</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/receptari.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="recepta.html" title="Recepta"
+             >previous</a> |</li>
+        <li><a href="index.html">Gestor de receptes de cuina a documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Grzegorz Szymanski i Sergi Torrabadella.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

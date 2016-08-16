@@ -1,0 +1,2 @@
+class AVRException(Exception):
+    pass

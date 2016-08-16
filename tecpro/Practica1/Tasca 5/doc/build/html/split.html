@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Mòdul split &mdash; Visio artificial v1.0a documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0a',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Visio artificial v1.0a documentation" href="index.html" />
+    <link rel="next" title="Mòdul Transf" href="transf.html" />
+    <link rel="prev" title="Welcome to Visio artificial’s documentation!" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="transf.html" title="Mòdul Transf"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to Visio artificial’s documentation!"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Visio artificial v1.0a documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="modul-split">
+<h1>Mòdul split<a class="headerlink" href="#modul-split" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="funcio-split-digit">
+<h2>Funció split_digit<a class="headerlink" href="#funcio-split-digit" title="Permalink to this headline">¶</a></h2>
+<p>La funció split_digit rep una matriu de nombres, corresponent a una imatge en blanc i negre(&#8220;1&#8221;) retallada per les funcions vtrim i htrim i escalada correctament. A continuació recorre la matriu fins a trobar una columna de pixels completament blancs, llabors separa en dues matrius diferents la part recorreguda  i la que queda per recorre.</p>
+<div class="highlight-python"><pre>def split_digit(img):
+    """
+    Retorna una tupla de amb el numero retallat i la resta de la imatge retallada
+    &gt;&gt;&gt; split_digit(('1', [[0,255,0,255], [0,255,0,255], [0, 255,0,255],[0,255, 0,255], [0, 255,0,255]]))
+    (('1', [[0], [0], [0], [0], [0]]), ('1', [[255, 0, 255], [255, 0, 255], [255, 0, 255], [255, 0, 255], [255, 0, 255]]))
+    """
+    count1=1
+    l=[]
+    eliminada=[]
+    mat=[]
+    mat1=[]
+    mat2=[]
+    m=img[1]
+    x=len(m)
+    y=len(m[0])
+    for fila in range(y):
+        f=[]
+        for columna in range(x):
+            f+=[0]
+        mat+=[f]
+    for i in range(y):
+        for j in range(x):
+            mat[i][j]=m[j][i]
+    for c in mat: #Fins aqui transposa
+        count1=0
+        l=[]
+        for u in c:
+            e=len(c)
+            if u==255:
+               count1+=1
+            l+=[u]
+        if count1!=e:
+           eliminada+=[l]
+        elif count1==e:
+             break
+     k=len(eliminada)
+     nombre=mat[:k]  #Fins aqui agafa un nombre transposat
+     x1=len(nombre)
+     y1=len(nombre[0])
+     for fila in range(y1):
+         f=[]
+         for columna in range(x1):
+             f+=[0]
+         mat1+=[f]
+     for i in range(y1):
+         for j in range(x1):
+             mat1[i][j]=nombre[j][i]
+     n=("1",mat1) #Retorna el primer nombre de la matricula arreglat
+     r=mat[k:]
+     x2=len(r)
+     y2=len(r[0])
+     for fila in range(y2):
+         f=[]
+         for columna in range(x2):
+             f+=[0]
+         mat2+=[f]
+     for i in range(y2):
+         for j in range(x2):
+             mat2[i][j]=r[j][i]
+     m=("1",mat2) #Retorna la resta de la imatge
+     return (n,m)</pre>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="index.html">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="#">Mòdul split</a><ul>
+<li><a class="reference external" href="#funcio-split-digit">Funció split_digit</a></li>
+</ul>
+</li>
+</ul>
+
+            <h4>Previous topic</h4>
+            <p class="topless"><a href="index.html"
+                                  title="previous chapter">Welcome to Visio artificial&#8217;s documentation!</a></p>
+            <h4>Next topic</h4>
+            <p class="topless"><a href="transf.html"
+                                  title="next chapter">Mòdul Transf</a></p>
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="_sources/split.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Quick search</h3>
+              <form class="search" action="search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Go" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Enter search terms or a module, class or function name.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="transf.html" title="Mòdul Transf"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to Visio artificial’s documentation!"
+             >previous</a> |</li>
+        <li><a href="index.html">Visio artificial v1.0a documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2014, Grzegorz Marek Szymanski i Sergi Torrabadella Faucon.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.6.
+    </div>
+  </body>
+</html>

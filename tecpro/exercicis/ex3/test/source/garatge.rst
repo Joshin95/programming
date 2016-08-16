@@ -1,0 +1,6 @@
+=======
+Garatge
+=======
+
+.. automodule:: garatge
+   :members:

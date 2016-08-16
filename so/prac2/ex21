@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Hola Nois"
+
+find $1 | grep *.py
+

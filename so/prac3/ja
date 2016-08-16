@@ -1,0 +1,119 @@
+#!/bin/bash
+
+if [ "$1" == "-n" ]
+then
+    if [ -d $HOME/.ja ]
+    then
+	echo "Vols eliminar la base anterior? [s/n]:"
+	read resposta
+	if [ $resposta == "s" ]
+	then
+	    #rm -r $HOME/.ja/*
+	    #mkdir $HOME/.ja
+
+	    rm -r $HOME/.ja
+	    mkdir $HOME/.ja
+
+	    echo "Base de dades creada amb exit"
+
+	else
+	    echo "Ok"
+	fi
+    else
+	mkdir $HOME/.ja
+	echo "Base de dades creada amb exit"
+    fi
+elif [ "$1" == "-a" ]
+then
+    if [ -e $HOME/.ja/"$2" ]
+    then
+	echo "Projecte existent"
+    else
+	touch $HOME/.ja/"$2"
+	echo "Projecte creat existosament"
+    fi
+elif [ "$1" == "-r" ]
+then
+    if [ -e $HOME/.ja/"$2" ]
+    then
+	rm -r $HOME/.ja/"$2"
+	echo "Projecte eliminat exitosament"
+    else
+	echo "El projecte que vol eliminar no existeix"
+    fi
+
+elif [ "$1" == "-b" ]
+then
+    if [ -e $HOME/.ja/"$2" ]
+    then
+	if [ "$(tail -n1 < $HOME/.ja/"$2" | cut -c 1)" != "B" ] #agafem la ultima linia del fitxer amb el tail i el primer caracter amb el cut i el comparem 
+	then
+	    echo "B" $(date "+%s")  >> $HOME/.ja/"$2"
+	    echo "Afegida hora d'inici"
+	else
+	    echo "El projecte no esta acabat"
+	fi
+    else
+	echo "El projecte no existeix"
+    fi
+elif [ "$1" == "-e" ]
+then
+    if [ -e $HOME/.ja/"$2" ]
+    then
+	if [ "$(tail -n1 < $HOME/.ja/"$2" | cut -c 1)" != "E" ]
+	then
+	    echo "E" $(date "+%s")  >> $HOME/.ja/"$2"
+	    echo "Afegida hora de final"
+	else
+	    echo "El projecte esta acabat"
+	fi
+    else
+	echo "El projecte no existeix"
+    fi
+
+elif [ "$1" == "-h" ]
+then
+    echo "--------------------------------------------"
+    echo "Benvingut al comptador de temps de projectes"
+    echo "--------------------------------------------"
+    echo "Les ordres que podra utilitzar amb aquest programa son les seguents:"
+    echo
+    echo "-n              Crea una nova base de dades pero en perd tota la informacio anterior"
+    echo "-a <projecte>   Afegeix un nou projecte a la base de dades"
+    echo "-r <projecte>   Esborra tot rastre del projecte de la base de dades"
+    echo "-b <projecte>   Apunta a la base de dades que comencem a treballar en el projecte"
+    echo "-e <projecte>   Apunta a la base de dades que acabem de treballar en el projecte"
+    echo "-h              Mostra un petit help de l’ordre"
+    echo "<projecte>      Consulta la informacio del projecte i en presenta un resum del total d’hores treballades i en quants lots de treball s’han fet"
+
+else
+    if [ -e $HOME/.ja/"$1" ]
+    then
+	final=0
+	lots=0
+	IFS=' '
+	while read line
+	do
+	   if [ "$(echo $line | cut -c 1)" == "B" ]
+	   then
+	       begin="$(echo $line | cut -c 3-)"
+	       result=0
+	   else
+	       end="$(echo $line | cut -c 3-)"
+	       result=$(echo "$end-$begin"|bc)
+	       lots=$(echo "$lots+1"|bc)
+	   fi	       
+	   final=$(echo "$final+$result"|bc)
+	   
+	    
+	done < $HOME/.ja/"$1"
+
+	final=$(date -u -d @${final} +"%T")
+	echo "Portes $final hores treballades en el projecte $1, i ho has fet amb $lots lots." 
+
+
+    fi
+
+fi
+   
+

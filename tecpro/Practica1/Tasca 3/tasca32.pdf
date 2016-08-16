@@ -1,0 +1,727 @@
+%PDF-1.3
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+% 'BasicFonts': class PDFDictionary 
+1 0 obj
+% The standard fonts dictionary
+<< /F1 2 0 R
+ /F2 3 0 R
+ /F3 4 0 R
+ /F4 5 0 R
+ /F5 6 0 R >>
+endobj
+% 'F1': class PDFType1Font 
+2 0 obj
+% Font Helvetica
+<< /BaseFont /Helvetica
+ /Encoding /WinAnsiEncoding
+ /Name /F1
+ /Subtype /Type1
+ /Type /Font >>
+endobj
+% 'F2': class PDFType1Font 
+3 0 obj
+% Font Helvetica-Bold
+<< /BaseFont /Helvetica-Bold
+ /Encoding /WinAnsiEncoding
+ /Name /F2
+ /Subtype /Type1
+ /Type /Font >>
+endobj
+% 'F3': class PDFType1Font 
+4 0 obj
+% Font Times-Roman
+<< /BaseFont /Times-Roman
+ /Encoding /WinAnsiEncoding
+ /Name /F3
+ /Subtype /Type1
+ /Type /Font >>
+endobj
+% 'F4': class PDFType1Font 
+5 0 obj
+% Font Courier
+<< /BaseFont /Courier
+ /Encoding /WinAnsiEncoding
+ /Name /F4
+ /Subtype /Type1
+ /Type /Font >>
+endobj
+% 'F5': class PDFType1Font 
+6 0 obj
+% Font Courier-Bold
+<< /BaseFont /Courier-Bold
+ /Encoding /WinAnsiEncoding
+ /Name /F5
+ /Subtype /Type1
+ /Type /Font >>
+endobj
+% 'Page1': class PDFPage 
+7 0 obj
+% Page dictionary
+<< /Contents 15 0 R
+ /MediaBox [ 0
+ 0
+ 595.2756
+ 841.8898 ]
+ /Parent 14 0 R
+ /Resources << /Font 1 0 R
+ /ProcSet [ /PDF
+ /Text
+ /ImageB
+ /ImageC
+ /ImageI ] >>
+ /Rotate 0
+ /Trans <<  >>
+ /Type /Page >>
+endobj
+% 'Annot.NUMBER1': class PDFDictionary 
+8 0 obj
+<< /A << /S /URI
+ /Type /Action
+ /URI (http://docs.python.org/2/tutorial/datastructures.html) >>
+ /Border [ 0
+ 0
+ 0 ]
+ /Rect [ 62.69291
+ 316.9936
+ 287.8029
+ 328.9936 ]
+ /Subtype /Link
+ /Type /Annot >>
+endobj
+% 'Page2': class PDFPage 
+9 0 obj
+% Page dictionary
+<< /Annots [ 8 0 R ]
+ /Contents 16 0 R
+ /MediaBox [ 0
+ 0
+ 595.2756
+ 841.8898 ]
+ /Parent 14 0 R
+ /Resources << /Font 1 0 R
+ /ProcSet [ /PDF
+ /Text
+ /ImageB
+ /ImageC
+ /ImageI ] >>
+ /Rotate 0
+ /Trans <<  >>
+ /Type /Page >>
+endobj
+% 'R10': class PDFCatalog 
+10 0 obj
+% Document Root
+<< /Outlines 12 0 R
+ /PageLabels 17 0 R
+ /PageMode /UseNone
+ /Pages 14 0 R
+ /Type /Catalog >>
+endobj
+% 'R11': class PDFInfo 
+11 0 obj
+<< /Author ()
+ /CreationDate (D:20140218131049-01'00')
+ /Keywords ()
+ /Producer (ReportLab http://www.reportlab.com)
+ /Subject (\(unspecified\))
+ /Title (Estructura de Python) >>
+endobj
+% 'R12': class PDFOutlines 
+12 0 obj
+<< /Count 1
+ /First 13 0 R
+ /Last 13 0 R
+ /Type /Outlines >>
+endobj
+% 'Outline.0': class OutlineEntryObject 
+13 0 obj
+<< /Dest [ 7 0 R
+ /XYZ
+ 62.69291
+ 704.0236
+ 0 ]
+ /Parent 12 0 R
+ /Title (Llistes) >>
+endobj
+% 'R14': class PDFPages 
+14 0 obj
+% page tree
+<< /Count 2
+ /Kids [ 7 0 R
+ 9 0 R ]
+ /Type /Pages >>
+endobj
+% 'R15': class PDFStream 
+15 0 obj
+% page stream
+<< /Length 6916 >>
+stream
+1 0 0 1 0 0 cm BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 741.0236 cm
+q
+BT 1 0 0 1 0 9.64 Tm 133.8149 0 Td 24 TL /F2 20 Tf 0 0 0 rg (Estructura de Python) Tj T* -133.8149 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 716.0236 cm
+0 0 0 rg
+BT /F3 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F2 10 Tf 12 TL 39.14937 0 Td (autors:) Tj T* -39.14937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL (Grzegorz Marek Szymanski i Sergi Torrabadella Faucon) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 683.0236 cm
+q
+BT 1 0 0 1 0 8.435 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Llistes) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 617.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 52.82 Tm /F1 10 Tf 12 TL 1.36936 Tw (Les llistes s\363n elements molt \372tils en la programaci\363 en el llenguatge de programaci\363 de Python. S\363n) Tj T* 0 Tw 2.446235 Tw (elements mutables, es a dir, que podem variar el seu contingut sense utilitzar cap comanda per a) Tj T* 0 Tw .617674 Tw (transformar-les pr\350viament, i aix\362 ho podem fer mitjan\347ant funci\363n predeterminades de python o pr\362pies) Tj T* 0 Tw .138735 Tw (funcions dissenyades pel programador. Anem a coneixer algunes de les comandes m\351s \372tils per a l'\372s de) Tj T* 0 Tw (les llistes:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 611.0236 cm
+Q
+q
+1 0 0 1 62.69291 428.6236 cm
+0 0 0 rg
+BT /F3 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 176.4 cm
+Q
+q
+1 0 0 1 20 176.4 cm
+Q
+q
+1 0 0 1 20 146.4 cm
+0 0 0 rg
+BT /F3 10 Tf 12 TL ET
+q
+1 0 0 1 6 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 16.82 Tm /F1 10 Tf 12 TL .113318 Tw (Crear una llista buida: es fa utilitzant dos claudators assignats a una variable, com podem veure) Tj T* 0 Tw (a continuaci\363.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 146.4 cm
+Q
+q
+1 0 0 1 20 146.4 cm
+Q
+q
+1 0 0 1 20 113.2 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 448.6898 24 re B*
+Q
+q
+BT 1 0 0 1 0 5.71 Tm 12 TL /F4 10 Tf 0 0 0 rg (l) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ([]) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 20 99.2 cm
+Q
+q
+1 0 0 1 20 99.2 cm
+Q
+q
+1 0 0 1 20 69.2 cm
+0 0 0 rg
+BT /F3 10 Tf 12 TL ET
+q
+1 0 0 1 6 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 16.82 Tm /F1 10 Tf 12 TL 1.038651 Tw (Afegir elements a una llista: es pot fer de diferents maneres, mitjan\347ant una funci\363 interna de) Tj T* 0 Tw (python o amb un signe de +, com podem veure a continuaci\363:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 69.2 cm
+Q
+q
+1 0 0 1 20 69.2 cm
+Q
+q
+1 0 0 1 20 0 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 448.6898 60 re B*
+Q
+q
+BT 1 0 0 1 0 41.71 Tm 12 TL /F4 10 Tf 0 0 0 rg (l) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ([]) Tj  T* (l) Tj .4 .4 .4 rg (+=) Tj 0 0 0 rg ([) Tj .4 .4 .4 rg (2) Tj 0 0 0 rg (]) Tj  T* (l) Tj .4 .4 .4 rg (+=) Tj 0 0 0 rg ([) Tj .4 .4 .4 rg (3) Tj 0 0 0 rg (]) Tj  T* /F5 10 Tf 0 .501961 0 rg (print) Tj /F4 10 Tf 0 0 0 rg ( ) Tj (l) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 428.6236 cm
+Q
+q
+1 0 0 1 62.69291 398.6236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 16.82 Tm /F1 10 Tf 12 TL 1.210574 Tw (Un cop tenim una llista amb dades, el m\351s interessant \351s la manera d'accedir-hi, anem a coneixer els) Tj T* 0 Tw (diferents metodes de iteraci\363 de llistes:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 392.6236 cm
+Q
+q
+1 0 0 1 62.69291 76.86614 cm
+0 0 0 rg
+BT /F3 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 320.4 cm
+Q
+q
+1 0 0 1 20 320.4 cm
+Q
+q
+1 0 0 1 20 302.4 cm
+0 0 0 rg
+BT /F3 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL (Utilitzant un bucle for, amb la seg\374ent sintaxi:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 302.4 cm
+Q
+q
+1 0 0 1 20 302.4 cm
+Q
+q
+1 0 0 1 20 197.2 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 442.6898 96 re B*
+Q
+q
+BT 1 0 0 1 0 77.71 Tm 12 TL /F4 10 Tf 0 0 0 rg (l) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ([) Tj .4 .4 .4 rg (2) Tj 0 0 0 rg (,) Tj .4 .4 .4 rg (3) Tj 0 0 0 rg (,) Tj .4 .4 .4 rg (4) Tj 0 0 0 rg (]) Tj  T* /F5 10 Tf 0 .501961 0 rg (for) Tj /F4 10 Tf 0 0 0 rg ( ) Tj (c) Tj ( ) Tj /F5 10 Tf .666667 .133333 1 rg (in) Tj /F4 10 Tf 0 0 0 rg ( ) Tj (l) Tj (:) Tj  T* (    ) Tj /F5 10 Tf 0 .501961 0 rg (print) Tj /F4 10 Tf 0 0 0 rg ( ) Tj (c) Tj  T* .729412 .129412 .129412 rg ("El resultat seria:") Tj 0 0 0 rg  T* .4 .4 .4 rg (2) Tj 0 0 0 rg  T* .4 .4 .4 rg (3) Tj 0 0 0 rg  T* .4 .4 .4 rg (4) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 20 183.2 cm
+Q
+q
+1 0 0 1 20 183.2 cm
+Q
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F3 10 Tf 12 TL ET
+q
+1 0 0 1 6 168.2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 168.2 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL (Utilitzant funcions predeterminades de python:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 162.2 cm
+Q
+q
+1 0 0 1 23 162.2 cm
+Q
+q
+1 0 0 1 23 120.2 cm
+0 0 0 rg
+BT /F3 10 Tf 12 TL ET
+q
+1 0 0 1 6 27 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 28.82 Tm /F1 10 Tf 12 TL .719982 Tw (Enumerate: Aquesta funci\363 de python recorre cada element de la llista, guardant aix\355, la) Tj T* 0 Tw 3.182651 Tw (posici\363 i el valor de cadascun dels elements de la llista. En tenim un exemple a) Tj T* 0 Tw (continuaci\363:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 23 120.2 cm
+Q
+q
+1 0 0 1 23 120.2 cm
+Q
+q
+1 0 0 1 23 3 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 416.6898 108 re B*
+Q
+q
+BT 1 0 0 1 0 89.71 Tm 12 TL /F4 10 Tf 0 0 0 rg (l) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ([) Tj .4 .4 .4 rg (2) Tj 0 0 0 rg (,) Tj .4 .4 .4 rg (3) Tj 0 0 0 rg (,) Tj .4 .4 .4 rg (4) Tj 0 0 0 rg (]) Tj  T* /F5 10 Tf 0 .501961 0 rg (for) Tj /F4 10 Tf 0 0 0 rg ( ) Tj (p) Tj (,) Tj (v) Tj ( ) Tj /F5 10 Tf .666667 .133333 1 rg (in) Tj /F4 10 Tf 0 0 0 rg ( ) Tj 0 .501961 0 rg (enumerate) Tj 0 0 0 rg (\() Tj (l) Tj (\):) Tj  T* (    ) Tj /F5 10 Tf 0 .501961 0 rg (print) Tj /F4 10 Tf 0 0 0 rg ( ) Tj (p) Tj (,) Tj (v) Tj  T*  T* .729412 .129412 .129412 rg ("El resultat seria:") Tj 0 0 0 rg  T* .4 .4 .4 rg (0) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (2) Tj 0 0 0 rg  T* .4 .4 .4 rg (1) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (3) Tj 0 0 0 rg  T* .4 .4 .4 rg (2) Tj 0 0 0 rg ( ) Tj .4 .4 .4 rg (4) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+Q
+Q
+q
+Q
+Q
+ 
+endstream
+
+endobj
+% 'R16': class PDFStream 
+16 0 obj
+% page stream
+<< /Length 4434 >>
+stream
+1 0 0 1 0 0 cm BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 355.4236 cm
+0 0 0 rg
+BT /F3 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+0 0 0 rg
+BT /F3 10 Tf 12 TL ET
+BT 1 0 0 1 6 396.6 Tm  T* ET
+q
+1 0 0 1 23 400.6 cm
+Q
+q
+1 0 0 1 23 400.6 cm
+Q
+q
+1 0 0 1 23 370.6 cm
+0 0 0 rg
+BT /F3 10 Tf 12 TL ET
+q
+1 0 0 1 6 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 16.82 Tm /F1 10 Tf 12 TL .28998 Tw (Index: Retorna la primera posici\363 on apareix l'element introduit pr\350viament. Funciona de la) Tj T* 0 Tw (seg\374ent manera:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 23 370.6 cm
+Q
+q
+1 0 0 1 23 370.6 cm
+Q
+q
+1 0 0 1 23 277.4 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 419.6898 84 re B*
+Q
+q
+BT 1 0 0 1 0 65.71 Tm 12 TL /F4 10 Tf 0 0 0 rg (l) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ([) Tj .4 .4 .4 rg (2) Tj 0 0 0 rg (,) Tj .4 .4 .4 rg (3) Tj 0 0 0 rg (,) Tj .4 .4 .4 rg (4) Tj 0 0 0 rg (]) Tj  T* (s) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg (l) Tj .4 .4 .4 rg (.) Tj 0 0 0 rg (index) Tj (\() Tj .4 .4 .4 rg (3) Tj 0 0 0 rg (\)) Tj  T* /F5 10 Tf 0 .501961 0 rg (print) Tj /F4 10 Tf 0 0 0 rg ( ) Tj (s) Tj  T*  T* .729412 .129412 .129412 rg ("El resultat seria:") Tj 0 0 0 rg  T* .4 .4 .4 rg (1) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 23 263.4 cm
+Q
+q
+1 0 0 1 23 263.4 cm
+Q
+q
+1 0 0 1 23 233.4 cm
+0 0 0 rg
+BT /F3 10 Tf 12 TL ET
+q
+1 0 0 1 6 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 16.82 Tm /F1 10 Tf 12 TL .759982 Tw (Count: Retorna el nombre de vegades que apareix l'element introduit a dintre d'una llista.) Tj T* 0 Tw (Vegem un exemple de execuci\363:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 23 233.4 cm
+Q
+q
+1 0 0 1 23 233.4 cm
+Q
+q
+1 0 0 1 23 140.2 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 419.6898 84 re B*
+Q
+q
+BT 1 0 0 1 0 65.71 Tm 12 TL /F4 10 Tf 0 0 0 rg (l) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ([) Tj .4 .4 .4 rg (2) Tj 0 0 0 rg (,) Tj .4 .4 .4 rg (3) Tj 0 0 0 rg (,) Tj .4 .4 .4 rg (4) Tj 0 0 0 rg (,) Tj .4 .4 .4 rg (2) Tj 0 0 0 rg (]) Tj  T* (s) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg (l) Tj .4 .4 .4 rg (.) Tj 0 0 0 rg (count) Tj (\() Tj .4 .4 .4 rg (2) Tj 0 0 0 rg (\)) Tj  T* /F5 10 Tf 0 .501961 0 rg (print) Tj /F4 10 Tf 0 0 0 rg ( ) Tj (s) Tj  T*  T* .729412 .129412 .129412 rg ("El resultat seria:") Tj 0 0 0 rg  T* .4 .4 .4 rg (2) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+1 0 0 1 23 126.2 cm
+Q
+q
+1 0 0 1 23 126.2 cm
+Q
+q
+1 0 0 1 23 96.2 cm
+0 0 0 rg
+BT /F3 10 Tf 12 TL ET
+q
+1 0 0 1 6 15 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 4.82 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 16.82 Tm /F1 10 Tf 12 TL 3.108443 Tw (Sort: Ordena el elements de la llista per ordre alfabetic o num\350ricament. Tenim un) Tj T* 0 Tw (exemple a continuaci\363:) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 23 96.2 cm
+Q
+q
+1 0 0 1 23 96.2 cm
+Q
+q
+1 0 0 1 23 3 cm
+q
+q
+1 0 0 1 0 0 cm
+q
+1 0 0 1 6.6 6.6 cm
+q
+.662745 .662745 .662745 RG
+.5 w
+.960784 .960784 .862745 rg
+n -6 -6 419.6898 84 re B*
+Q
+q
+BT 1 0 0 1 0 65.71 Tm 12 TL /F4 10 Tf 0 0 0 rg (l) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg ([) Tj .4 .4 .4 rg (3) Tj 0 0 0 rg (,) Tj .4 .4 .4 rg (5) Tj 0 0 0 rg (,) Tj .4 .4 .4 rg (1) Tj 0 0 0 rg (]) Tj  T* (s) Tj .4 .4 .4 rg (=) Tj 0 0 0 rg (l) Tj .4 .4 .4 rg (.) Tj 0 0 0 rg (sort) Tj (\(\)) Tj  T* /F5 10 Tf 0 .501961 0 rg (print) Tj /F4 10 Tf 0 0 0 rg ( ) Tj (s) Tj  T*  T* .729412 .129412 .129412 rg ("El resultat seria:") Tj 0 0 0 rg  T* ([) Tj .4 .4 .4 rg (1) Tj 0 0 0 rg (,) Tj .4 .4 .4 rg (3) Tj 0 0 0 rg (,) Tj .4 .4 .4 rg (5) Tj 0 0 0 rg (]) Tj T* ET
+Q
+Q
+Q
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+Q
+q
+1 0 0 1 20 0 cm
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 355.4236 cm
+Q
+q
+1 0 0 1 62.69291 313.4236 cm
+q
+BT 1 0 0 1 0 28.82 Tm .567633 Tw 12 TL /F1 10 Tf 0 0 0 rg (Aquests s\363n algunes de les funcions que estan predefinides al python per facilitar la feina, totes elles es) Tj T* 0 Tw 1.978735 Tw (poden consultar la pagina web principal de python en la secci\363 de llistes. Aqui teniu l'enlla\347 directe:) Tj T* 0 Tw 0 0 .501961 rg (http://docs.python.org/2/tutorial/datastructures.html) Tj T* ET
+Q
+Q
+ 
+endstream
+
+endobj
+% 'R17': class PDFPageLabels 
+17 0 obj
+% Document Root
+<< /Nums [ 0
+ 18 0 R
+ 1
+ 19 0 R ] >>
+endobj
+% 'R18': class PDFPageLabel 
+18 0 obj
+% None
+<< /S /D
+ /St 1 >>
+endobj
+% 'R19': class PDFPageLabel 
+19 0 obj
+% None
+<< /S /D
+ /St 2 >>
+endobj
+xref
+0 20
+0000000000 65535 f
+0000000113 00000 n
+0000000257 00000 n
+0000000422 00000 n
+0000000597 00000 n
+0000000766 00000 n
+0000000927 00000 n
+0000001096 00000 n
+0000001389 00000 n
+0000001646 00000 n
+0000001946 00000 n
+0000002105 00000 n
+0000002337 00000 n
+0000002462 00000 n
+0000002598 00000 n
+0000002713 00000 n
+0000009730 00000 n
+0000014269 00000 n
+0000014375 00000 n
+0000014452 00000 n
+trailer
+<< /ID 
+ % ReportLab generated PDF document -- digest (http://www.reportlab.com) 
+ [(\245\266\214\324\3024#\)_\030\312i9\217M\315) (\245\266\214\324\3024#\)_\030\312i9\217M\315)] 
+
+ /Info 11 0 R
+ /Root 10 0 R
+ /Size 20 >>
+startxref
+14499
+%%EOF

@@ -1,0 +1,1 @@
+Search.setIndex({desctypes:{},terms:{index:[],search:[],welcom:0,titl:1,modul:[],indic:[],content:0,circuit:0,tabl:[],document:0,page:[]},titles:["Welcome to Circuit&#8217;s documentation!","&lt;no title&gt;"],modules:{},descrefs:{},filenames:["index","circuit"]})

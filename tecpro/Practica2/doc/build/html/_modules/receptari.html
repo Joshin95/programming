@@ -1,0 +1,165 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>receptari &mdash; Gestor de receptes de cuina a documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     'a',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="Gestor de receptes de cuina a documentation" href="../index.html" />
+    <link rel="up" title="Module code" href="index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="../index.html">Gestor de receptes de cuina a documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Module code</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <h1>Source code for receptari</h1><div class="highlight"><pre>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Aquest modul s&#39;ocupa de la gestio de les receptes i productes i de guardar tot el contingut en diferents diccionaris</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">producte</span> <span class="kn">import</span> <span class="n">Producte</span>
+<span class="kn">from</span> <span class="nn">recepta</span> <span class="kn">import</span> <span class="n">Recepta</span>
+
+<div class="viewcode-block" id="Receptari"><a class="viewcode-back" href="../receptari.html#receptari.Receptari">[docs]</a><span class="k">class</span> <span class="nc">Receptari</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Aquesta classe gestiona els diccionaris on es guarden els productes i les receptes</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Metode contructor que genera dos diccionaris buits </span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_receptes</span><span class="o">=</span><span class="p">{}</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_productes</span><span class="o">=</span><span class="p">{}</span>
+    <span class="k">def</span> <span class="nf">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">other</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Metode especial que crea la igualtat directe de dos objectes</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">getNom</span><span class="p">()</span><span class="o">==</span><span class="n">other</span><span class="o">.</span><span class="n">getNom</span><span class="p">()</span> 
+<div class="viewcode-block" id="Receptari.afegeix_recepta"><a class="viewcode-back" href="../receptari.html#receptari.Receptari.afegeix_recepta">[docs]</a>    <span class="k">def</span> <span class="nf">afegeix_recepta</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Metode modificador que afegeix l&#39;objecte recepta de nom n al diccionari</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">n</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_receptes</span><span class="p">:</span>
+            <span class="k">print</span> <span class="s">&quot;La recepta ja hi es&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_receptes</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="o">=</span><span class="n">Recepta</span><span class="p">(</span><span class="n">n</span><span class="p">)</span></div>
+<div class="viewcode-block" id="Receptari.afegeix_producte"><a class="viewcode-back" href="../receptari.html#receptari.Receptari.afegeix_producte">[docs]</a>    <span class="k">def</span> <span class="nf">afegeix_producte</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">nomp</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Metode modificador que afegeix l&#39;objecte producte de nom p al diccionari</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">nomp</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_productes</span><span class="p">:</span>
+            <span class="k">print</span> <span class="s">&quot;El producte ja hi es&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_productes</span><span class="p">[</span><span class="n">nomp</span><span class="p">]</span><span class="o">=</span><span class="n">Producte</span><span class="p">(</span><span class="n">nomp</span><span class="p">)</span></div>
+<div class="viewcode-block" id="Receptari.afegeix_ingredient_recepta"><a class="viewcode-back" href="../receptari.html#receptari.Receptari.afegeix_ingredient_recepta">[docs]</a>    <span class="k">def</span> <span class="nf">afegeix_ingredient_recepta</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">nomp</span><span class="p">,</span><span class="n">nomr</span><span class="p">,</span><span class="n">q</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Aquest metode Afegeix q grams del ingredient nomp a la recepta nomr</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">nomr</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_receptes</span> <span class="ow">and</span> <span class="n">nomp</span> <span class="ow">not</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_productes</span><span class="p">:</span>
+            <span class="k">print</span> <span class="s">&quot;La recepta o el producte no existeixen&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_receptes</span><span class="p">[</span><span class="n">nomr</span><span class="p">]</span><span class="o">.</span><span class="n">afegeix_ingredients</span><span class="p">(</span><span class="n">Producte</span><span class="p">(</span><span class="n">nomp</span><span class="p">),</span><span class="n">q</span><span class="p">)</span></div>
+<div class="viewcode-block" id="Receptari.receptes_ingredients"><a class="viewcode-back" href="../receptari.html#receptari.Receptari.receptes_ingredients">[docs]</a>    <span class="k">def</span> <span class="nf">receptes_ingredients</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">nomp</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Aquest metode retorna la llista de receptos on s&#39;hi troba el producte nomp</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">l</span><span class="o">=</span><span class="p">[]</span>
+        <span class="k">for</span> <span class="n">k</span><span class="p">,</span><span class="n">v</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_receptes</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+            <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">v</span><span class="o">.</span><span class="n">getIng</span><span class="p">():</span>
+                <span class="k">if</span> <span class="n">nomp</span><span class="o">==</span><span class="nb">str</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+                    <span class="n">l</span><span class="o">+=</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">l</span></div>
+<div class="viewcode-block" id="Receptari.receptes"><a class="viewcode-back" href="../receptari.html#receptari.Receptari.receptes">[docs]</a>    <span class="k">def</span> <span class="nf">receptes</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Aquest metode retorna la llista de totes les receptes del receptari</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_receptes</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span></div>
+<div class="viewcode-block" id="Receptari.ingredients"><a class="viewcode-back" href="../receptari.html#receptari.Receptari.ingredients">[docs]</a>    <span class="k">def</span> <span class="nf">ingredients</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Aquest metode retorna la llista de tots els ingredients del receptari</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_productes</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span></div>
+<div class="viewcode-block" id="Receptari.recepta"><a class="viewcode-back" href="../receptari.html#receptari.Receptari.recepta">[docs]</a>    <span class="k">def</span> <span class="nf">recepta</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">nomr</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Aquest metode retorna una llista de tuples on cada d&#39;elles conte un ingredient i la seva quantitat de la recepta nomr</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_receptes</span><span class="p">[</span><span class="n">nomr</span><span class="p">]</span></div></div>
+</pre></div>
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li><a href="../index.html">Gestor de receptes de cuina a documentation</a> &raquo;</li>
+          <li><a href="index.html" >Module code</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Grzegorz Szymanski i Sergi Torrabadella.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

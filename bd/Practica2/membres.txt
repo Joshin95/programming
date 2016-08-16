@@ -1,0 +1,4 @@
+Gregorz Szymanski
+Sergi Torrabadella
+
+Els resultats estan en els fitxers .sql com comentaris

@@ -1,0 +1,29 @@
+.. Gestor de receptes de cuina documentation master file, created by
+   sphinx-quickstart on Sun Mar 16 20:06:57 2014.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to Gestor de receptes de cuina's documentation!
+=======================================================
+
+Contents:
+
+.. toctree::
+   :maxdepth: 5
+
+   producte
+   recepta
+   receptari	
+   interpret
+   main
+   
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+

@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "Hola Nois"
+
+for imatge in $1/*.jpg
+do
+convert "$imatge" -resize 150x200! -set filename:$imatge '%t' $1/%[filename:$imatge]-br.jpg
+done 
+
+
+#http://stackoverflow.com/questions/24804026/imagemagick-using-convert-and-rename-output
+#executar desde fora --> bash P2/ex11 P2

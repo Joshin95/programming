@@ -1,0 +1,26 @@
+#!/usr/bin/python
+# −∗− coding: utf−8 −∗−
+
+import sys
+import string
+from intelhex import IntelHex16bit
+from avrmcu import *
+
+if __name__=="__main__":
+    fitxer=IntelHex16bit(sys.argv[-1]) #nom fitxer es ultim valor sys.argv
+    llista=[]
+    for i in range(fitxer.maxaddr()+1):
+        llista.append(fitxer[i])
+    prog=AvrMcu()
+    prog.set_prog(llista)
+    comandes=sys.argv[1]
+    if "t" in comandes and len(sys.argv)>2:
+        prog.set_trace(True)
+    start=prog.run()
+    if start and len(sys.argv)>2:
+        if "d" in comandes:
+            print prog.dump_dat()
+        if "p" in comandes:
+            print prog.dump_prog()
+        if "r" in comandes:
+            print prog.dump_reg()
