@@ -1,7 +1,0 @@
-=========
-Interpret
-=========
-
-.. automodule:: interpret
-   :members:
-

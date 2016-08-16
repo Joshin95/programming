@@ -1,7 +1,0 @@
-=======
-Recepta
-=======
-
-.. automodule:: recepta
-   :members:
-

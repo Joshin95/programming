@@ -1,7 +1,0 @@
-========
-Producte
-========
-
-.. automodule:: producte
-   :members:
-

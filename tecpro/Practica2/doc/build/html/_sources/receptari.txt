@@ -1,7 +1,0 @@
-=========
-Receptari
-=========
-
-.. automodule:: receptari
-   :members:
-
